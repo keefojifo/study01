@@ -38,6 +38,7 @@ public class Lotto {
 			}
 			
 		}
-		System.out.println("총 맞은 갯수 : " + correctCnt);
+		 System.out.println("총 맞은 갯수 : " + correctCnt); 
+	
 	}
 }
