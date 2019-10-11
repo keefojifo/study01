@@ -20,7 +20,7 @@ public class FinalTest {
 	FinalTest ft = new FinalTest();
 	
 	System.out.println(ft instanceof FinalTest);
-	System.out.println(ft instanceof FianlFather);
+	//System.out.println(ft instanceof FinalFather);
 	System.out.println(ft instanceof Object);
 		}
 }

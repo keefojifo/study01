@@ -19,16 +19,8 @@ public class Instanceof {
 	}
 	
 	public static void main(String[] args) {
-		Father s = new Son();
-		
-		Son s2 = (Son)s;
-		s2.sonsTest();
-		
-		Father f = new Father();
-		if(f instanceof Son) {
-			s2 = (Son)f;
-			s2.sonsTest();
-		}
+		/*
+*/
 	}
 
 }
