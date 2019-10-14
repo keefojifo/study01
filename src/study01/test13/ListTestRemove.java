@@ -23,8 +23,17 @@ public class ListTestRemove {
 
 	}
 	
-	public void remove() {
-		String[] removeStrs = this.strs;		
+	public void remove(String str2) {
+		String[] removeStrs = this.strs;	
+		
+		for (int i = 0; i < strs.length; i++) {
+				if(this.strs[i] == str2) {
+				this.strs[i] = "";
+				this.strs[i-1] = removeStrs[i];
+			}
+		
+		}
+			
 			
 		this.strs[this.strs.length -1] = "";
 		
@@ -41,12 +50,11 @@ public class ListTestRemove {
 		ltr.add("a");
 		ltr.add("b");
 		ltr.add("c");
-		ltr.remove();
-		ltr.remove();
+		ltr.remove("a");
+
 		System.out.println(ltr.size());
 		System.out.println(ltr.strs[0]);
-
-		System.out.println(ltr.strs[1]);
+        System.out.println(ltr.strs[1]);
 		System.out.println(ltr.strs[2]);
 
 	}
